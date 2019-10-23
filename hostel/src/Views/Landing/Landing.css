@@ -1,0 +1,19 @@
+.landing-page {
+    background: #1953DE;
+    color: #fff;
+    height: 100vh;
+}
+
+.landing-caption {
+    margin-top: 70px;
+}
+
+.landing-caption h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.landing-caption p {
+    font-size: 18px;
+    line-height: 1.9;
+}

@@ -1,0 +1,40 @@
+button:focus {
+    outline: none;
+}
+.landing-page-button {
+    color: #1953DE;
+    background: #fff;
+    border:none;
+    border-radius: 4px;
+    width: 20%;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.landing-page-button:hover {
+    color: #fff;
+    background:  #1953DE;
+    border: 1px solid #fff;
+}
+
+.sign-up-button {
+    width: 90%;
+   padding: 5px;
+   box-sizing: border-box;
+   border: none;
+   background: #1953DE;
+   border-radius: 9px;
+   height: 44px;
+   color: #fff;
+   font-size: 1em;
+   margin: 10px 0;
+}
+.sign-up-button:hover {
+   background: #FFF;
+   border-radius: 9px;
+   border: 1px solid #1953DE;
+   height: 44px;
+   color: #1953DE;
+   font-size: 1em;
+   margin: 10px 0;
+}
