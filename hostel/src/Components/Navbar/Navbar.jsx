@@ -2,7 +2,9 @@ import React from 'react';
 
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import { auth } from '../../Firebase/firebase.utils'
+import { auth } from '../../Firebase/firebase.utils';
+
+import { connect } from 'react-redux';
 
 const Navbar = ({name, currentUser}) => (
     <div>
@@ -19,7 +21,7 @@ const Navbar = ({name, currentUser}) => (
                         currentUser ? 
                         <Link className="nav-item nav-link" to="/signup" onClick={() => auth.signOut()}>Sign out</Link>
                         :
-                        <Link className="nav-item nav-link" to="/signin">Sign in</Link>
+                        <Link className="nav-item nav-link" to="/signin">Sign in</Link> 
                     }
                 </div>
             </div>
@@ -27,4 +29,10 @@ const Navbar = ({name, currentUser}) => (
     </div>
 )
 
-export default Navbar;
+const mapStateToProps = state => {
+    return {
+        currentUser: state.user.currentUser
+    }
+}
+
+export default connect(mapStateToProps, null)(Navbar);

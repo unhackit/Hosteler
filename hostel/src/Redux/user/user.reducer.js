@@ -1,5 +1,12 @@
 const INITIAL_STATE = {
-    currentUser: null
+    currentUser: {
+        createdAt: '',
+        displayName: '',
+        email: '',
+        id: '',
+        registration: false,
+        role: ''
+    }
 }
 
 const userReducer = (state = INITIAL_STATE, action) => {
@@ -7,7 +14,7 @@ const userReducer = (state = INITIAL_STATE, action) => {
         case 'SET_CURRENT_USER':
             return {
                 ...state,
-                currentUser: action.payload
+                currentUser: action.payload,
             }
         default:
             return state

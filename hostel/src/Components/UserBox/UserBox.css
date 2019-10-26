@@ -1,0 +1,30 @@
+.user-box {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.user-box {
+    background: #009FFF;  
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF); 
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+
+
+.summary-box-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.summary-box-data {
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.box-icon i {
+    color: #fff;
+    font-size: 45px;
+
+}

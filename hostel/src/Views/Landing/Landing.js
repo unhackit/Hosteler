@@ -1,11 +1,17 @@
 import React from 'react';
 
-import './Landing.css'
+import './Landing.css';
+
 
 import Button from '../../Components/Button/Button';
-import LandingVector from '../../Assets/Images/landing-vector.png'
+import LandingVector from '../../Assets/Images/landing-vector.png';
 
-const Landing = () => (
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
+
+
+const Landing = ({currentUser}) => (
     <div className='landing-page'>
         <div className='container'>
             <div className='row'>
@@ -19,7 +25,14 @@ const Landing = () => (
                             <p><i className="fas fa-check pr-3"></i>Compare room features</p>
                             <p><i className="fas fa-check pr-3"></i>Apply for and have a hostel allocated to you</p>
                         </div>
-                        <Button for='landing-page-button'>Get started</Button>
+                        {
+                            currentUser ? 
+                            <Link to='admin/dashboard/summary'>
+                                <Button for='landing-page-button'>Go To Dashboard</Button>
+                            </Link>
+                            :
+                            <Button for='landing-page-button'>Get started</Button>
+                        }
                     </div>
                  </div>
                  <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
@@ -32,4 +45,8 @@ const Landing = () => (
     </div>
 )
 
-export default Landing;
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser
+})
+
+export default connect(mapStateToProps, null)(Landing);

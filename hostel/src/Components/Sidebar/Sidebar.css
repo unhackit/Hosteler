@@ -1,0 +1,76 @@
+.row {
+    width: 100%;
+}
+
+.sidebar {
+    -webkit-transition: margin 200ms ease-out;
+     -moz-transition: margin 200ms ease-out;
+     -o-transition: margin 200ms ease-out;
+      transition: margin 200ms ease-out;
+      background-color: #1953DE;
+      color:#fff;
+      height:91.5vh;
+  }
+
+  
+  .sidebar a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .sidebar a:hover {
+    color: #c3c3c3;
+    text-decoration: none;
+
+}
+
+  .sidebar .user-img {
+    border-radius: 50%;
+  }
+
+  
+
+
+ @media screen and  (min-width: 320px) {
+   
+    .sidebar:hover + .main{
+      margin-left: 200px;
+    }
+   
+    
+    .sidebar a{
+      padding-right: 13px;
+    }
+
+    .sidebar {
+      margin-left: -500px;
+      float: left;
+      margin-bottom: 0px;
+    }
+
+    .sidebar li {
+      width: 100%;
+    }
+
+    .sidebar:hover{
+      margin-left: 0px;
+    }
+
+    .forAnimate{
+      opacity: 0;
+    }
+  }
+   
+@media screen and (min-width: 1330px) {
+
+    .sidebar{
+      margin-left: 0px;
+    }
+
+    .sidebar .forAnimate{
+      opacity: 1;
+    }
+  }
+
+
+ 

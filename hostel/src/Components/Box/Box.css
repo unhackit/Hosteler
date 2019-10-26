@@ -1,0 +1,61 @@
+.summary-box {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.user-box {
+    background: #009FFF;  
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF); 
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+.hostel-box {
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c); 
+    background: linear-gradient(to right, #f80759, #bc4e9c); 
+}
+
+.request-box {
+    background: #00b09b;  
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b); 
+    background: linear-gradient(to right, #96c93d, #00b09b); 
+
+}
+.room-box {
+    background: #20002c;  
+    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  
+    background: linear-gradient(to right, #cbb4d4, #20002c); 
+
+
+}
+.announcement-box {
+    background: #ff4b1f;  
+    background: -webkit-linear-gradient(to right, #1fddff, #ff4b1f);  
+    background: linear-gradient(to right, #1fddff, #ff4b1f); 
+
+}
+
+.administrator-box {
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.summary-box-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.summary-box-data {
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.box-icon i {
+    color: #fff;
+    font-size: 45px;
+
+}

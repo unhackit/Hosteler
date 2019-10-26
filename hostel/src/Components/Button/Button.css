@@ -6,8 +6,7 @@ button:focus {
     background: #fff;
     border:none;
     border-radius: 4px;
-    width: 20%;
-    padding: 5px 0;
+    padding: 5px 10px;
     margin-top: 10px;
 }
 
@@ -37,4 +36,27 @@ button:focus {
    color: #1953DE;
    font-size: 1em;
    margin: 10px 0;
+}
+
+.dashboard-summary {
+   padding: 10px 5px;
+   box-sizing: border-box;
+   border: none;
+   background: #000;
+   border-radius: 5px;
+   height: 44px;
+   color: #fff;
+   font-size: 14px;
+   float: right;
+   margin: 15px 0;
+}
+
+.user-table {
+    border: none;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px;
+    margin: 0 5px 0 0;
 }
